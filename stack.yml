@@ -1,0 +1,11 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  jasmine-faas:
+    lang: node
+    handler: ./jasmine-faas
+    image: yowari/jasmine-faas
+    environment:
+      write_debug: true
